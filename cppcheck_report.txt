@@ -1,0 +1,1286 @@
+external/kconfig/conf.c:133:14: style: The scope of the variable 'def' can be reduced. [variableScope]
+ const char *def;
+             ^
+external/kconfig/confdata.c:79:17: style: The scope of the variable 'sym' can be reduced. [variableScope]
+ struct symbol *sym;
+                ^
+external/kconfig/confdata.c:106:14: style: The scope of the variable 'fullname' can be reduced. [variableScope]
+ static char fullname[PATH_MAX+1];
+             ^
+external/kconfig/confdata.c:428:6: style: The scope of the variable 'l' can be reduced. [variableScope]
+ int l;
+     ^
+external/kconfig/confdata.c:486:38: style:inconclusive: Function 'conf_write_defconfig' argument 1 names different: declaration 'name' definition 'filename'. [funcArgNamesDifferent]
+int conf_write_defconfig(const char *filename)
+                                     ^
+external/kconfig/lkc_proto.h:7:1: note: Function 'conf_write_defconfig' argument 1 names different: declaration 'name' definition 'filename'.
+P(conf_write_defconfig,int,(const char *name));
+^
+external/kconfig/confdata.c:486:38: note: Function 'conf_write_defconfig' argument 1 names different: declaration 'name' definition 'filename'.
+int conf_write_defconfig(const char *filename)
+                                     ^
+external/kconfig/confdata.c:85:6: style: Variable 'dst' is assigned a value that is never used. [unreadVariable]
+ dst = name;
+     ^
+external/kconfig/confdata.c:63:1: error: va_list 'ap' was opened but not closed by va_end(). [va_end_missing]
+}
+^
+external/kconfig/expr.c:238:15: style: The scope of the variable 'tmp' can be reduced. [variableScope]
+ struct expr *tmp;
+              ^
+external/kconfig/gconf.c:1387:9: style: Variable 'valid' is reassigned a value before the old one has been used. [redundantAssignment]
+  valid = gtk_tree_model_iter_next(model2, child2);
+        ^
+external/kconfig/gconf.c:1368:12: note: valid is assigned
+     valid = TRUE;
+           ^
+external/kconfig/gconf.c:1387:9: note: valid is overwritten
+  valid = gtk_tree_model_iter_next(model2, child2);
+        ^
+external/kconfig/gconf.c:1277:15: style: The scope of the variable 'ret' can be reduced. [variableScope]
+ GtkTreeIter *ret;
+              ^
+external/kconfig/gconf.c:891:54: style:inconclusive: Function 'renderer_toggled' argument 1 names different: declaration 'cellrenderertoggle' definition 'cell'. [funcArgNamesDifferent]
+static void renderer_toggled(GtkCellRendererToggle * cell,
+                                                     ^
+external/kconfig/gconf.c:288:54: note: Function 'renderer_toggled' argument 1 names different: declaration 'cellrenderertoggle' definition 'cell'.
+static void renderer_toggled(GtkCellRendererToggle * cellrenderertoggle,
+                                                     ^
+external/kconfig/gconf.c:891:54: note: Function 'renderer_toggled' argument 1 names different: declaration 'cellrenderertoggle' definition 'cell'.
+static void renderer_toggled(GtkCellRendererToggle * cell,
+                                                     ^
+external/kconfig/gconf.c:892:17: style:inconclusive: Function 'renderer_toggled' argument 2 names different: declaration 'arg1' definition 'path_string'. [funcArgNamesDifferent]
+        gchar * path_string, gpointer user_data)
+                ^
+external/kconfig/gconf.c:289:17: note: Function 'renderer_toggled' argument 2 names different: declaration 'arg1' definition 'path_string'.
+        gchar * arg1, gpointer user_data);
+                ^
+external/kconfig/gconf.c:892:17: note: Function 'renderer_toggled' argument 2 names different: declaration 'arg1' definition 'path_string'.
+        gchar * path_string, gpointer user_data)
+                ^
+external/kconfig/gconf.c:814:15: style: Local variable 'menu' shadows outer function [shadowFunction]
+ struct menu *menu;
+              ^
+external/kconfig/lkc_proto.h:15:1: note: Shadowed declaration
+P(rootmenu,struct menu,);
+^
+external/kconfig/gconf.c:814:15: note: Shadow variable
+ struct menu *menu;
+              ^
+external/kconfig/gconf.c:897:15: style: Local variable 'menu' shadows outer function [shadowFunction]
+ struct menu *menu;
+              ^
+external/kconfig/lkc_proto.h:15:1: note: Shadowed declaration
+P(rootmenu,struct menu,);
+^
+external/kconfig/gconf.c:897:15: note: Shadow variable
+ struct menu *menu;
+              ^
+external/kconfig/gconf.c:945:15: style: Local variable 'menu' shadows outer function [shadowFunction]
+ struct menu *menu;
+              ^
+external/kconfig/lkc_proto.h:15:1: note: Shadowed declaration
+P(rootmenu,struct menu,);
+^
+external/kconfig/gconf.c:945:15: note: Shadow variable
+ struct menu *menu;
+              ^
+external/kconfig/gconf.c:1002:15: style: Local variable 'menu' shadows outer function [shadowFunction]
+ struct menu *menu;
+              ^
+external/kconfig/lkc_proto.h:15:1: note: Shadowed declaration
+P(rootmenu,struct menu,);
+^
+external/kconfig/gconf.c:1002:15: note: Shadow variable
+ struct menu *menu;
+              ^
+external/kconfig/gconf.c:1044:15: style: Local variable 'menu' shadows outer function [shadowFunction]
+ struct menu *menu;
+              ^
+external/kconfig/lkc_proto.h:15:1: note: Shadowed declaration
+P(rootmenu,struct menu,);
+^
+external/kconfig/gconf.c:1044:15: note: Shadow variable
+ struct menu *menu;
+              ^
+external/kconfig/gconf.c:1063:15: style: Local variable 'menu' shadows outer function [shadowFunction]
+ struct menu *menu;
+              ^
+external/kconfig/lkc_proto.h:15:1: note: Shadowed declaration
+P(rootmenu,struct menu,);
+^
+external/kconfig/gconf.c:1063:15: note: Shadow variable
+ struct menu *menu;
+              ^
+external/kconfig/gconf.c:1221:11: style: Local variable 'color' shadows outer variable [shadowVariable]
+ GdkColor color;
+          ^
+external/kconfig/gconf.c:55:10: note: Shadowed declaration
+GdkColor color;
+         ^
+external/kconfig/gconf.c:1221:11: note: Shadow variable
+ GdkColor color;
+          ^
+external/kconfig/gconf.c:1281:16: style: Local variable 'menu' shadows outer function [shadowFunction]
+  struct menu *menu;
+               ^
+external/kconfig/lkc_proto.h:15:1: note: Shadowed declaration
+P(rootmenu,struct menu,);
+^
+external/kconfig/gconf.c:1281:16: note: Shadow variable
+  struct menu *menu;
+               ^
+external/kconfig/gconf.c:170:9: style: Variable 'widget' is assigned a value that is never used. [unreadVariable]
+ widget = glade_xml_get_widget(xml, "toolbar1");
+        ^
+external/kconfig/gconf.c:854:10: style: Variable 'oldval' is assigned a value that is never used. [unreadVariable]
+  oldval = sym_get_tristate_value(sym);
+         ^
+external/kconfig/lxdialog/textbox.c:73:14: style: Condition 'height>4' is always true [knownConditionTrueFalse]
+  if (height > 4)
+             ^
+external/kconfig/lxdialog/textbox.c:68:13: note: Assuming that condition 'height<8' is not redundant
+ if (height < 8 || width < 8)
+            ^
+external/kconfig/lxdialog/textbox.c:73:14: note: Condition 'height>4' is always true
+  if (height > 4)
+             ^
+external/kconfig/lxdialog/textbox.c:80:13: style: Condition 'width>5' is always true [knownConditionTrueFalse]
+  if (width > 5)
+            ^
+external/kconfig/lxdialog/textbox.c:68:26: note: Assuming that condition 'width<8' is not redundant
+ if (height < 8 || width < 8)
+                         ^
+external/kconfig/lxdialog/textbox.c:80:13: note: Condition 'width>5' is always true
+  if (width > 5)
+            ^
+external/kconfig/lxdialog/textbox.c:51:51: style:inconclusive: Function 'dialog_textbox' argument 2 names different: declaration 'file' definition 'tbuf'. [funcArgNamesDifferent]
+int dialog_textbox(const char *title, const char *tbuf,
+                                                  ^
+external/kconfig/lxdialog/dialog.h:212:51: note: Function 'dialog_textbox' argument 2 names different: declaration 'file' definition 'tbuf'.
+int dialog_textbox(const char *title, const char *file, int height, int width);
+                                                  ^
+external/kconfig/lxdialog/textbox.c:51:51: note: Function 'dialog_textbox' argument 2 names different: declaration 'file' definition 'tbuf'.
+int dialog_textbox(const char *title, const char *tbuf,
+                                                  ^
+external/kconfig/lxdialog/textbox.c:52:10: style:inconclusive: Function 'dialog_textbox' argument 3 names different: declaration 'height' definition 'initial_height'. [funcArgNamesDifferent]
+     int initial_height, int initial_width)
+         ^
+external/kconfig/lxdialog/dialog.h:212:61: note: Function 'dialog_textbox' argument 3 names different: declaration 'height' definition 'initial_height'.
+int dialog_textbox(const char *title, const char *file, int height, int width);
+                                                            ^
+external/kconfig/lxdialog/textbox.c:52:10: note: Function 'dialog_textbox' argument 3 names different: declaration 'height' definition 'initial_height'.
+     int initial_height, int initial_width)
+         ^
+external/kconfig/lxdialog/textbox.c:52:30: style:inconclusive: Function 'dialog_textbox' argument 4 names different: declaration 'width' definition 'initial_width'. [funcArgNamesDifferent]
+     int initial_height, int initial_width)
+                             ^
+external/kconfig/lxdialog/dialog.h:212:73: note: Function 'dialog_textbox' argument 4 names different: declaration 'width' definition 'initial_width'.
+int dialog_textbox(const char *title, const char *file, int height, int width);
+                                                                        ^
+external/kconfig/lxdialog/textbox.c:52:30: note: Function 'dialog_textbox' argument 4 names different: declaration 'width' definition 'initial_width'.
+     int initial_height, int initial_width)
+                             ^
+external/kconfig/lxdialog/util.c:331:6: style: The scope of the variable 'newl' can be reduced. [variableScope]
+ int newl, cur_x, cur_y;
+     ^
+external/kconfig/lxdialog/util.c:331:12: style: The scope of the variable 'cur_x' can be reduced. [variableScope]
+ int newl, cur_x, cur_y;
+           ^
+external/kconfig/lxdialog/util.c:331:19: style: The scope of the variable 'cur_y' can be reduced. [variableScope]
+ int newl, cur_x, cur_y;
+                  ^
+external/kconfig/lxdialog/util.c:332:21: style: The scope of the variable 'room' can be reduced. [variableScope]
+ int i, prompt_len, room, wlen;
+                    ^
+external/kconfig/lxdialog/util.c:332:27: style: The scope of the variable 'wlen' can be reduced. [variableScope]
+ int i, prompt_len, room, wlen;
+                          ^
+external/kconfig/lxdialog/util.c:333:30: style: The scope of the variable 'word' can be reduced. [variableScope]
+ char tempstr[MAX_LEN + 1], *word, *sp, *sp2;
+                             ^
+external/kconfig/lxdialog/util.c:333:42: style: The scope of the variable 'sp2' can be reduced. [variableScope]
+ char tempstr[MAX_LEN + 1], *word, *sp, *sp2;
+                                         ^
+external/kconfig/lxdialog/util.c:457:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i;
+     ^
+external/kconfig/lxdialog/util.c:478:23: style: The scope of the variable 'c' can be reduced. [variableScope]
+ int i, in_paren = 0, c;
+                      ^
+external/kconfig/lxdialog/util.c:585:26: style:inconclusive: Function 'item_set_data' argument 1 names different: declaration 'p' definition 'ptr'. [funcArgNamesDifferent]
+void item_set_data(void *ptr)
+                         ^
+external/kconfig/lxdialog/dialog.h:157:26: note: Function 'item_set_data' argument 1 names different: declaration 'p' definition 'ptr'.
+void item_set_data(void *p);
+                         ^
+external/kconfig/lxdialog/util.c:585:26: note: Function 'item_set_data' argument 1 names different: declaration 'p' definition 'ptr'.
+void item_set_data(void *ptr)
+                         ^
+external/kconfig/mconf.c:522:6: style: The scope of the variable 'res' can be reduced. [variableScope]
+ int res;
+     ^
+external/kconfig/menu.c:462:8: style: Condition 'sym' is always true [knownConditionTrueFalse]
+   if (sym)
+       ^
+external/kconfig/menu.c:457:6: note: Assuming that condition '!sym' is not redundant
+ if (!sym || sym_get_tristate_value(menu->sym) == no)
+     ^
+external/kconfig/menu.c:462:8: note: Condition 'sym' is always true
+   if (sym)
+       ^
+external/kconfig/menu.c:559:2: warning: Either the condition 'sym' is redundant or there is possible null pointer dereference: sym. [nullPointerRedundantCheck]
+ for_all_prompts(sym, prop)
+ ^
+external/kconfig/menu.c:546:6: note: Assuming that condition 'sym' is not redundant
+ if (sym && sym->name) {
+     ^
+external/kconfig/menu.c:559:2: note: Null pointer dereference
+ for_all_prompts(sym, prop)
+ ^
+external/kconfig/menu.c:562:2: warning: Either the condition 'sym' is redundant or there is possible null pointer dereference: sym. [nullPointerRedundantCheck]
+ for_all_properties(sym, prop, P_SELECT) {
+ ^
+external/kconfig/menu.c:546:6: note: Assuming that condition 'sym' is not redundant
+ if (sym && sym->name) {
+     ^
+external/kconfig/menu.c:562:2: note: Null pointer dereference
+ for_all_properties(sym, prop, P_SELECT) {
+ ^
+external/kconfig/menu.c:572:6: warning: Either the condition 'sym' is redundant or there is possible null pointer dereference: sym. [nullPointerRedundantCheck]
+ if (sym->rev_dep.expr) {
+     ^
+external/kconfig/menu.c:546:6: note: Assuming that condition 'sym' is not redundant
+ if (sym && sym->name) {
+     ^
+external/kconfig/menu.c:572:6: note: Null pointer dereference
+ if (sym->rev_dep.expr) {
+     ^
+external/kconfig/menu.c:512:9: style: The scope of the variable 'j' can be reduced. [variableScope]
+ int i, j;
+        ^
+external/kconfig/menu.c:169:39: style:inconclusive: Function 'menu_add_visibility' argument 1 names different: declaration 'dep' definition 'expr'. [funcArgNamesDifferent]
+void menu_add_visibility(struct expr *expr)
+                                      ^
+external/kconfig/lkc.h:113:39: note: Function 'menu_add_visibility' argument 1 names different: declaration 'dep' definition 'expr'.
+void menu_add_visibility(struct expr *dep);
+                                      ^
+external/kconfig/menu.c:169:39: note: Function 'menu_add_visibility' argument 1 names different: declaration 'dep' definition 'expr'.
+void menu_add_visibility(struct expr *expr)
+                                      ^
+external/kconfig/nconf.c:1158:7: style: Condition 'submenu' is always true [knownConditionTrueFalse]
+  if (submenu)
+      ^
+external/kconfig/nconf.c:1156:7: note: Assuming that condition '!submenu' is not redundant
+  if (!submenu || !menu_is_visible(submenu))
+      ^
+external/kconfig/nconf.c:1158:7: note: Condition 'submenu' is always true
+  if (submenu)
+      ^
+external/kconfig/nconf.c:1246:21: style: Variable 'child' is assigned a value that is never used. [unreadVariable]
+ struct menu *child = 0;
+                    ^
+external/kconfig/nconf.c:1250:13: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+ int res, i = 0;
+            ^
+external/kconfig/nconf.gui.c:169:4: style: Variable 'x' is reassigned a value before the old one has been used. [redundantAssignment]
+ x = startx + (int)temp;
+   ^
+external/kconfig/nconf.gui.c:161:5: note: x is assigned
+  x = startx;
+    ^
+external/kconfig/nconf.gui.c:169:4: note: x is overwritten
+ x = startx + (int)temp;
+   ^
+external/kconfig/nconf.gui.c:525:14: style: Redundant initialization for 'total_lines'. The initialized value is overwritten before it is read. [redundantInitialization]
+ total_lines = get_line_no(text);
+             ^
+external/kconfig/nconf.gui.c:512:18: note: total_lines is initialized
+ int total_lines = get_line_no(text);
+                 ^
+external/kconfig/nconf.gui.c:525:14: note: total_lines is overwritten
+ total_lines = get_line_no(text);
+             ^
+external/kconfig/nconf.gui.c:244:8: style: The scope of the variable 'btn' can be reduced. [variableScope]
+ char *btn;
+       ^
+external/kconfig/qconf.h:53:2: style: Class 'ConfigList' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+ ConfigList(ConfigView* p, const char *name = 0);
+ ^
+external/kconfig/qconf.h:206:2: style: Class 'ConfigLineEdit' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+ ConfigLineEdit(ConfigView* parent);
+ ^
+external/kconfig/qconf.h:222:2: style: Class 'ConfigView' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+ ConfigView(QWidget* parent, const char *name = 0);
+ ^
+external/kconfig/qconf.h:255:2: style: Class 'ConfigInfoView' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+ ConfigInfoView(QWidget* parent, const char *name = 0);
+ ^
+external/kconfig/qconf.h:285:2: style: Class 'ConfigSearchWindow' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+ ConfigSearchWindow(ConfigMainWindow* parent, const char *name = 0);
+ ^
+external/kconfig/qconf.h:57:10: style: C-style pointer casting [cstyleCast]
+  return (ConfigView*)Parent::parent();
+         ^
+external/kconfig/qconf.h:97:10: style: C-style pointer casting [cstyleCast]
+  return (ConfigItem *)Parent::firstChild();
+         ^
+external/kconfig/qconf.h:168:10: style: C-style pointer casting [cstyleCast]
+  return (ConfigList*)Parent::listView();
+         ^
+external/kconfig/qconf.h:172:10: style: C-style pointer casting [cstyleCast]
+  return (ConfigItem *)Parent::firstChild();
+         ^
+external/kconfig/qconf.h:176:10: style: C-style pointer casting [cstyleCast]
+  return (ConfigItem *)Parent::nextSibling();
+         ^
+external/kconfig/qconf.h:209:10: style: C-style pointer casting [cstyleCast]
+  return (ConfigView*)Parent::parent();
+         ^
+external/kconfig/qconf.cc:241:12: style: C-style pointer casting [cstyleCast]
+  for (i = (ConfigItem*)menu->data; i; i = i->nextItem)
+           ^
+external/kconfig/qconf.cc:267:14: style: C-style pointer casting [cstyleCast]
+  nextItem = (ConfigItem*)menu->data;
+             ^
+external/kconfig/qconf.cc:413:21: style: C-style pointer casting [cstyleCast]
+ ConfigItem* item = (ConfigItem*)menu->data;
+                    ^
+external/kconfig/qconf.cc:428:21: style: C-style pointer casting [cstyleCast]
+ ConfigItem* item = (ConfigItem*)selectedItem();
+                    ^
+external/kconfig/qconf.cc:452:11: style: C-style pointer casting [cstyleCast]
+   item = (ConfigItem*)it.current();
+          ^
+external/kconfig/qconf.cc:578:17: style: C-style pointer casting [cstyleCast]
+ for (; (item = (ConfigItem*)it.current()); it++) {
+                ^
+external/kconfig/qconf.cc:674:9: style: C-style pointer casting [cstyleCast]
+ item = (ConfigItem*)i;
+        ^
+external/kconfig/qconf.cc:721:21: style: C-style pointer casting [cstyleCast]
+ ConfigItem* item = (ConfigItem*)itemAt(p);
+                    ^
+external/kconfig/qconf.cc:783:21: style: C-style pointer casting [cstyleCast]
+ ConfigItem* item = (ConfigItem*)itemAt(p);
+                    ^
+external/kconfig/qconf.cc:813:21: style: C-style pointer casting [cstyleCast]
+ ConfigItem* item = (ConfigItem *)currentItem();
+                    ^
+external/kconfig/qconf.cc:1576:9: style: C-style pointer casting [cstyleCast]
+ item = (ConfigItem*)menuList->selectedItem();
+        ^
+external/kconfig/qconf.cc:1582:10: style: C-style pointer casting [cstyleCast]
+  item = (ConfigItem*)item->parent();
+         ^
+external/kconfig/qconf.cc:449:15: style: The scope of the variable 'item' can be reduced. [variableScope]
+  ConfigItem* item;
+              ^
+external/kconfig/qconf.cc:657:43: style:inconclusive: Function 'keyPressEvent' argument 1 names different: declaration 'e' definition 'ev'. [funcArgNamesDifferent]
+void ConfigList::keyPressEvent(QKeyEvent* ev)
+                                          ^
+external/kconfig/qconf.h:62:32: note: Function 'keyPressEvent' argument 1 names different: declaration 'e' definition 'ev'.
+ void keyPressEvent(QKeyEvent *e);
+                               ^
+external/kconfig/qconf.cc:657:43: note: Function 'keyPressEvent' argument 1 names different: declaration 'e' definition 'ev'.
+void ConfigList::keyPressEvent(QKeyEvent* ev)
+                                          ^
+external/kconfig/qconf.cc:982:43: style:inconclusive: Function 'setInfo' argument 1 names different: declaration 'menu' definition 'm'. [funcArgNamesDifferent]
+void ConfigInfoView::setInfo(struct menu *m)
+                                          ^
+external/kconfig/qconf.h:259:28: note: Function 'setInfo' argument 1 names different: declaration 'menu' definition 'm'.
+ void setInfo(struct menu *menu);
+                           ^
+external/kconfig/qconf.cc:982:43: note: Function 'setInfo' argument 1 names different: declaration 'menu' definition 'm'.
+void ConfigInfoView::setInfo(struct menu *m)
+                                          ^
+external/kconfig/qconf.cc:425:15: style: Local variable 'menu' shadows outer function [shadowFunction]
+ struct menu *menu;
+              ^
+external/kconfig/lkc_proto.h:15:1: note: Shadowed declaration
+P(rootmenu,struct menu,);
+^
+external/kconfig/qconf.cc:425:15: note: Shadow variable
+ struct menu *menu;
+              ^
+external/kconfig/qconf.cc:449:15: style: Local variable 'item' shadows outer argument [shadowArgument]
+  ConfigItem* item;
+              ^
+external/kconfig/qconf.cc:441:41: note: Shadowed declaration
+void ConfigList::updateList(ConfigItem* item)
+                                        ^
+external/kconfig/qconf.cc:449:15: note: Shadow variable
+  ConfigItem* item;
+              ^
+external/kconfig/qconf.cc:512:15: style: Local variable 'menu' shadows outer function [shadowFunction]
+ struct menu* menu;
+              ^
+external/kconfig/lkc_proto.h:15:1: note: Shadowed declaration
+P(rootmenu,struct menu,);
+^
+external/kconfig/qconf.cc:512:15: note: Shadow variable
+ struct menu* menu;
+              ^
+external/kconfig/qconf.cc:661:15: style: Local variable 'menu' shadows outer function [shadowFunction]
+ struct menu *menu;
+              ^
+external/kconfig/lkc_proto.h:15:1: note: Shadowed declaration
+P(rootmenu,struct menu,);
+^
+external/kconfig/qconf.cc:661:15: note: Shadow variable
+ struct menu *menu;
+              ^
+external/kconfig/qconf.cc:722:15: style: Local variable 'menu' shadows outer function [shadowFunction]
+ struct menu *menu;
+              ^
+external/kconfig/lkc_proto.h:15:1: note: Shadowed declaration
+P(rootmenu,struct menu,);
+^
+external/kconfig/qconf.cc:722:15: note: Shadow variable
+ struct menu *menu;
+              ^
+external/kconfig/qconf.cc:784:15: style: Local variable 'menu' shadows outer function [shadowFunction]
+ struct menu *menu;
+              ^
+external/kconfig/lkc_proto.h:15:1: note: Shadowed declaration
+P(rootmenu,struct menu,);
+^
+external/kconfig/qconf.cc:784:15: note: Shadow variable
+ struct menu *menu;
+              ^
+external/kconfig/qconf.cc:809:15: style: Local variable 'menu' shadows outer function [shadowFunction]
+ struct menu *menu = NULL;
+              ^
+external/kconfig/lkc_proto.h:15:1: note: Shadowed declaration
+P(rootmenu,struct menu,);
+^
+external/kconfig/qconf.cc:809:15: note: Shadow variable
+ struct menu *menu = NULL;
+              ^
+external/kconfig/qconf.cc:1271:12: style: Local variable 'menu' shadows outer function [shadowFunction]
+ QMenuBar* menu;
+           ^
+external/kconfig/lkc_proto.h:15:1: note: Shadowed declaration
+P(rootmenu,struct menu,);
+^
+external/kconfig/qconf.cc:1271:12: note: Shadow variable
+ QMenuBar* menu;
+           ^
+external/kconfig/symbol.c:885:4: error: Common realloc mistake: 'res' nulled but not freed upon failure [memleakOnRealloc]
+   res = realloc(res, reslen);
+   ^
+external/kconfig/symbol.c:1096:14: style: Variable 'stack.expr' is reassigned a value before the old one has been used. [redundantAssignment]
+  stack.expr = NULL;
+             ^
+external/kconfig/symbol.c:1092:14: note: stack.expr is assigned
+  stack.expr = prop->expr;
+             ^
+external/kconfig/symbol.c:1096:14: note: stack.expr is overwritten
+  stack.expr = NULL;
+             ^
+external/kconfig/symbol.c:678:17: style: The scope of the variable 'ds' can be reduced. [variableScope]
+ struct symbol *ds;
+                ^
+external/kconfig/symbol.c:971:23: style: The scope of the variable 'next_sym' can be reduced. [variableScope]
+ struct symbol *sym, *next_sym;
+                      ^
+external/kconfig/symbol.c:1145:19: style: The scope of the variable 'prop' can be reduced. [variableScope]
+ struct property *prop;
+                  ^
+external/kconfig/symbol.c:1179:20: style: The scope of the variable 'propp' can be reduced. [variableScope]
+ struct property **propp;
+                   ^
+external/kconfig/symbol.c:456:61: style:inconclusive: Function 'sym_tristate_within_range' argument 2 names different: declaration 'tri' definition 'val'. [funcArgNamesDifferent]
+bool sym_tristate_within_range(struct symbol *sym, tristate val)
+                                                            ^
+external/kconfig/lkc_proto.h:38:1: note: Function 'sym_tristate_within_range' argument 2 names different: declaration 'tri' definition 'val'.
+P(sym_tristate_within_range,bool,(struct symbol *sym,tristate tri));
+^
+external/kconfig/symbol.c:456:61: note: Function 'sym_tristate_within_range' argument 2 names different: declaration 'tri' definition 'val'.
+bool sym_tristate_within_range(struct symbol *sym, tristate val)
+                                                            ^
+external/kconfig/symbol.c:475:58: style:inconclusive: Function 'sym_set_tristate_value' argument 2 names different: declaration 'tri' definition 'val'. [funcArgNamesDifferent]
+bool sym_set_tristate_value(struct symbol *sym, tristate val)
+                                                         ^
+external/kconfig/lkc_proto.h:39:1: note: Function 'sym_set_tristate_value' argument 2 names different: declaration 'tri' definition 'val'.
+P(sym_set_tristate_value,bool,(struct symbol *sym,tristate tri));
+^
+external/kconfig/symbol.c:475:58: note: Function 'sym_set_tristate_value' argument 2 names different: declaration 'tri' definition 'val'.
+bool sym_set_tristate_value(struct symbol *sym, tristate val)
+                                                         ^
+external/kconfig/symbol.c:534:55: style:inconclusive: Function 'sym_string_valid' argument 2 names different: declaration 'newval' definition 'str'. [funcArgNamesDifferent]
+bool sym_string_valid(struct symbol *sym, const char *str)
+                                                      ^
+external/kconfig/lkc_proto.h:41:1: note: Function 'sym_string_valid' argument 2 names different: declaration 'newval' definition 'str'.
+P(sym_string_valid,bool,(struct symbol *sym, const char *newval));
+^
+external/kconfig/symbol.c:534:55: note: Function 'sym_string_valid' argument 2 names different: declaration 'newval' definition 'str'.
+bool sym_string_valid(struct symbol *sym, const char *str)
+                                                      ^
+external/kconfig/symbol.c:354:18: style: Local variable 'e' shadows outer variable [shadowVariable]
+    struct expr *e;
+                 ^
+external/kconfig/symbol.c:290:15: note: Shadowed declaration
+ struct expr *e;
+              ^
+external/kconfig/symbol.c:354:18: note: Shadow variable
+    struct expr *e;
+                 ^
+external/kconfig/util.c:37:23: style: The scope of the variable 'env_sym' can be reduced. [variableScope]
+ struct symbol *sym, *env_sym;
+                      ^
+external/kconfig/util.c:123:9: style: The scope of the variable 'l' can be reduced. [variableScope]
+ size_t l;
+        ^
+kernel/fpage.c:169:4: warning: Possible null pointer dereference: fpage [nullPointer]
+   fpage->as_next = create_fpage(base, shift, mpid);
+   ^
+kernel/fpage.c:151:19: note: Assignment 'fpage=NULL', assigned value is 0
+ fpage_t *fpage = NULL;
+                  ^
+kernel/fpage.c:169:4: note: Null pointer dereference
+   fpage->as_next = create_fpage(base, shift, mpid);
+   ^
+kernel/fpage.c:170:12: warning: Possible null pointer dereference: fpage [nullPointer]
+   fpage = fpage->as_next;
+           ^
+kernel/fpage.c:151:19: note: Assignment 'fpage=NULL', assigned value is 0
+ fpage_t *fpage = NULL;
+                  ^
+kernel/fpage.c:170:12: note: Null pointer dereference
+   fpage = fpage->as_next;
+           ^
+kernel/fpage.c:150:6: style: The scope of the variable 'shift' can be reduced. [variableScope]
+ int shift, sshift, bshift;
+     ^
+kernel/fpage.c:150:13: style: The scope of the variable 'sshift' can be reduced. [variableScope]
+ int shift, sshift, bshift;
+            ^
+kernel/fpage.c:150:21: style: The scope of the variable 'bshift' can be reduced. [variableScope]
+ int shift, sshift, bshift;
+                    ^
+kernel/fpage.c:221:12: style: The scope of the variable 'fp' can be reduced. [variableScope]
+ fpage_t **fp;
+           ^
+kernel/fpage.c:224:11: style: Checking if unsigned expression 'size' is less than zero. [unsignedLessThanZero]
+ if (size <= 0)
+          ^
+kernel/fpage.c:109:2: error: Uninitialized variable: end [uninitvar]
+ remove_fpage_from_list(as, fp, first, as_next);
+ ^
+kernel/fpage.c:110:2: error: Uninitialized variable: end [uninitvar]
+ remove_fpage_from_list(as, fp, mpu_first, mpu_next);
+ ^
+kernel/interrupt.c:142:11: style:inconclusive: Boolean expression '!uirq' is used in bitwise operation. Did you mean '||'? [bitwiseOnBoolean]
+ if (!uirq| !uirq->thr)
+          ^
+kernel/interrupt.c:142:11: style: Boolean result is used in bitwise operation. Clarify expression with parentheses. [clarifyCondition]
+ if (!uirq| !uirq->thr)
+          ^
+kernel/interrupt.c:212:30: style:inconclusive: Function '__interrupt_handler' argument 1 names different: declaration 'n' definition 'irq'. [funcArgNamesDifferent]
+void __interrupt_handler(int irq)
+                             ^
+kernel/interrupt.c:13:30: note: Function '__interrupt_handler' argument 1 names different: declaration 'n' definition 'irq'.
+void __interrupt_handler(int n);
+                             ^
+kernel/interrupt.c:212:30: note: Function '__interrupt_handler' argument 1 names different: declaration 'n' definition 'irq'.
+void __interrupt_handler(int irq)
+                             ^
+kernel/ipc.c:47:14: style: Variable 'tag.s.flags' is assigned a value that is never used. [unreadVariable]
+ tag.s.flags |= 0x8;
+             ^
+kernel/kip.c:7:26: error: Signed integer overflow for expression '0x84<<24'. [integerOverflow]
+ .api_version.raw = 0x84 << 24 | 7 << 16, /* L4 X.2, rev 7 */
+                         ^
+kernel/ksym.c:22:35: portability: '(void*)ksym_addr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+  __ksym_tbl = (void *) ksym_addr + 8;
+                                  ^
+kernel/ksym.c:23:40: portability: '(void*)__ksym_tbl' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+  __ksym_strings = (void *) __ksym_tbl +
+                                       ^
+kernel/ktimer.c:129:7: style: The scope of the variable 'etime' can be reduced. [variableScope]
+ long etime = 0, delta = 0;
+      ^
+kernel/ktimer.c:129:18: style: The scope of the variable 'delta' can be reduced. [variableScope]
+ long etime = 0, delta = 0;
+                 ^
+kernel/ktimer.c:246:11: style: The scope of the variable 'h_retvalue' can be reduced. [variableScope]
+ uint32_t h_retvalue  = 0;
+          ^
+kernel/ktimer.c:246:23: style: Variable 'h_retvalue' is assigned a value that is never used. [unreadVariable]
+ uint32_t h_retvalue  = 0;
+                      ^
+kernel/ktimer.c:101:10: style: The scope of the variable 'avg' can be reduced. [variableScope]
+ int32_t avg;
+         ^
+kernel/ktimer.c:366:29: style: Checking if unsigned expression 'reload' is less than zero. [unsignedLessThanZero]
+   reload_overflow = reload < 0;
+                            ^
+kernel/lib/bsearch.c:33:6: style: The scope of the variable 'cmp' can be reduced. [variableScope]
+ int cmp;
+     ^
+kernel/lib/bsearch.c:34:14: style: The scope of the variable 'p' can be reduced. [variableScope]
+ const void *p;
+             ^
+kernel/lib/ktable.c:106:28: portability: '(void*)kt->data' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+  return (void *) kt->data + (i * kt->size);
+                           ^
+kernel/lib/ktable.c:135:29: portability: '(void*)kt->data' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+   return (void *) kt->data + (i * kt->size);
+                            ^
+kernel/lib/ktable.c:26:12: style: The scope of the variable 'kt' can be reduced. [variableScope]
+ ktable_t *kt;
+           ^
+kernel/lib/memcpy.c:154:2: style:inconclusive: Statements following return, break, continue, goto or throw will never be executed. [unreachableCode]
+ for (; n; n--)
+ ^
+kernel/lib/memcpy.c:26:11: style: The scope of the variable 'w' can be reduced. [variableScope]
+ uint32_t w, x;
+          ^
+kernel/lib/memcpy.c:26:14: style: The scope of the variable 'x' can be reduced. [variableScope]
+ uint32_t w, x;
+             ^
+kernel/lib/sort.c:69:22: portability: 'base' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+       cmp_func(base + c, base + c + size) < 0)
+                     ^
+kernel/lib/sort.c:69:36: portability: 'base+c' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+       cmp_func(base + c, base + c + size) < 0)
+                                   ^
+kernel/lib/sort.c:71:22: portability: 'base' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+   if (cmp_func(base + r, base + c) >= 0)
+                     ^
+kernel/lib/sort.c:73:4: portability: 'base' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+   vecswap(base + r, base + c, size);
+   ^
+kernel/lib/sort.c:79:3: portability: 'base' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+  vecswap(base, base + i, size);
+  ^
+kernel/lib/sort.c:83:22: portability: 'base' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+       cmp_func(base + c, base + c + size) < 0)
+                     ^
+kernel/lib/sort.c:83:36: portability: 'base+c' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+       cmp_func(base + c, base + c + size) < 0)
+                                   ^
+kernel/lib/sort.c:85:22: portability: 'base' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+   if (cmp_func(base + r, base + c) >= 0)
+                     ^
+kernel/lib/sort.c:87:4: portability: 'base' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+   vecswap(base + r, base + c, size);
+   ^
+kernel/memory.c:273:21: warning: Either the condition 'i<8' is redundant or the array 'mpu[8]' is accessed at index 8, which is out of bounds. [arrayIndexOutOfBoundsCond]
+ as->mpu_first = mpu[mpu_first_i];
+                    ^
+kernel/memory.c:201:11: note: Assuming that condition 'i<8' is not redundant
+ while (i < 8 && fp && start < end) {
+          ^
+kernel/memory.c:213:16: note: Assignment 'mpu_first_i=i', assigned value is 8
+ mpu_first_i = i;
+               ^
+kernel/memory.c:273:21: note: Array index out of bounds
+ as->mpu_first = mpu[mpu_first_i];
+                    ^
+kernel/memory.c:522:11: warning:inconclusive: Possible null pointer dereference: as [nullPointer]
+  fpage = as->first;
+          ^
+kernel/memory.c:518:13: note: Assignment 'as=NULL', assigned value is 0
+ as_t *as = NULL;
+            ^
+kernel/memory.c:522:11: note: Null pointer dereference
+  fpage = as->first;
+          ^
+kernel/memory.c:523:44: warning:inconclusive: Possible null pointer dereference: as [nullPointer]
+  dbg_printf(DL_KDB, "Address Space %p\n", as->as_spaceid);
+                                           ^
+kernel/memory.c:518:13: note: Assignment 'as=NULL', assigned value is 0
+ as_t *as = NULL;
+            ^
+kernel/memory.c:523:44: note: Null pointer dereference
+  dbg_printf(DL_KDB, "Address Space %p\n", as->as_spaceid);
+                                           ^
+kernel/memory.c:531:11: warning:inconclusive: Possible null pointer dereference: as [nullPointer]
+  fpage = as->mpu_stack_first;
+          ^
+kernel/memory.c:518:13: note: Assignment 'as=NULL', assigned value is 0
+ as_t *as = NULL;
+            ^
+kernel/memory.c:531:11: note: Null pointer dereference
+  fpage = as->mpu_stack_first;
+          ^
+kernel/memory.c:538:11: warning:inconclusive: Possible null pointer dereference: as [nullPointer]
+  fpage = as->mpu_first;
+          ^
+kernel/memory.c:518:13: note: Assignment 'as=NULL', assigned value is 0
+ as_t *as = NULL;
+            ^
+kernel/memory.c:538:11: note: Null pointer dereference
+  fpage = as->mpu_first;
+          ^
+kernel/memory.c:546:11: warning:inconclusive: Possible null pointer dereference: as [nullPointer]
+  fpage = as->first;
+          ^
+kernel/memory.c:518:13: note: Assignment 'as=NULL', assigned value is 0
+ as_t *as = NULL;
+            ^
+kernel/memory.c:546:11: note: Null pointer dereference
+  fpage = as->first;
+          ^
+kernel/memory.c:517:15: style: The scope of the variable 'nl' can be reduced. [variableScope]
+ int idx = 0, nl = 0, i;
+              ^
+kernel/memory.c:517:23: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int idx = 0, nl = 0, i;
+                      ^
+kernel/softirq.c:38:11: style: Local variable 'softirq_schedule' shadows outer function [shadowFunction]
+ uint32_t softirq_schedule = 0, executed = 0;
+          ^
+kernel/softirq.c:21:6: note: Shadowed declaration
+void softirq_schedule(softirq_type_t type)
+     ^
+kernel/softirq.c:38:11: note: Shadow variable
+ uint32_t softirq_schedule = 0, executed = 0;
+          ^
+kernel/thread.c:233:26: style: The scope of the variable 'prev_child' can be reduced. [variableScope]
+ tcb_t *parent, *child, *prev_child;
+                         ^
+kernel/thread.c:309:5: portability: 'sp' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ sp -= RESERVED_STACK;
+    ^
+kernel/thread.c:349:5: portability: 'sp' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ sp -= RESERVED_STACK;
+    ^
+loader/elf/elf32.c:115:35: portability: '(void*)elfFile' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ stringTable = ((void *) elfFile) + sections[elfFile->e_shstrndx].sh_offset;
+                                  ^
+loader/entry.c:103:57: error: Subtracting pointers that point to different objects [comparePointers]
+ memcpy(&data_start, &kernel_flash_start + (&kernel_end - &kernel_start),
+                                                        ^
+loader/entry.c:26:17: note: Variable declared here.
+extern uint32_t kernel_end;
+                ^
+loader/entry.c:103:45: note: Address of variable taken here.
+ memcpy(&data_start, &kernel_flash_start + (&kernel_end - &kernel_start),
+                                            ^
+loader/entry.c:25:17: note: Variable declared here.
+extern uint32_t kernel_start;
+                ^
+loader/entry.c:103:59: note: Address of variable taken here.
+ memcpy(&data_start, &kernel_flash_start + (&kernel_end - &kernel_start),
+                                                          ^
+loader/entry.c:103:57: note: Subtracting pointers that point to different objects
+ memcpy(&data_start, &kernel_flash_start + (&kernel_end - &kernel_start),
+                                                        ^
+loader/entry.c:104:20: error: Subtracting pointers that point to different objects [comparePointers]
+        (&data_end - &data_start) * sizeof(uint32_t));
+                   ^
+loader/entry.c:28:17: note: Variable declared here.
+extern uint32_t data_end;
+                ^
+loader/entry.c:104:10: note: Address of variable taken here.
+        (&data_end - &data_start) * sizeof(uint32_t));
+         ^
+loader/entry.c:27:17: note: Variable declared here.
+extern uint32_t data_start;
+                ^
+loader/entry.c:104:22: note: Address of variable taken here.
+        (&data_end - &data_start) * sizeof(uint32_t));
+                     ^
+loader/entry.c:104:20: note: Subtracting pointers that point to different objects
+        (&data_end - &data_start) * sizeof(uint32_t));
+                   ^
+loader/entry.c:108:34: error: Subtracting pointers that point to different objects [comparePointers]
+ memset(&bss_start, 0, (&bss_end - &bss_start) * sizeof(uint32_t));
+                                 ^
+loader/entry.c:30:17: note: Variable declared here.
+extern uint32_t bss_end;
+                ^
+loader/entry.c:108:25: note: Address of variable taken here.
+ memset(&bss_start, 0, (&bss_end - &bss_start) * sizeof(uint32_t));
+                        ^
+loader/entry.c:29:17: note: Variable declared here.
+extern uint32_t bss_start;
+                ^
+loader/entry.c:108:36: note: Address of variable taken here.
+ memset(&bss_start, 0, (&bss_end - &bss_start) * sizeof(uint32_t));
+                                   ^
+loader/entry.c:108:34: note: Subtracting pointers that point to different objects
+ memset(&bss_start, 0, (&bss_end - &bss_start) * sizeof(uint32_t));
+                                 ^
+platform/debug_device.c:129:2: style: Assignment of function parameter has no effect outside the function. [uselessAssignmentArg]
+ chr = 0;
+ ^
+platform/debug_device.c:129:6: style: Variable 'chr' is assigned a value that is never used. [unreadVariable]
+ chr = 0;
+     ^
+platform/debug_device.c:29:2: style: Assignment of function parameter has no effect outside the function. [uselessAssignmentArg]
+ chr = 0;
+ ^
+platform/debug_device.c:29:6: style: Variable 'chr' is assigned a value that is never used. [unreadVariable]
+ chr = 0;
+     ^
+platform/stm32-common/rcc.c:174:1: error: Unmatched '}'. Configuration: ''. [syntaxError]
+}
+^
+platform/stm32f429/fmc.c:7:11: style: The scope of the variable 'tmpr3' can be reduced. [variableScope]
+ uint32_t tmpr3 = 0;
+          ^
+platform/stm32f429/fmc.c:8:11: style: The scope of the variable 'tmpr4' can be reduced. [variableScope]
+ uint32_t tmpr4 = 0;
+          ^
+platform/stm32f429/fmc.c:7:17: style: Variable 'tmpr3' is assigned a value that is never used. [unreadVariable]
+ uint32_t tmpr3 = 0;
+                ^
+platform/stm32f429/fmc.c:8:17: style: Variable 'tmpr4' is assigned a value that is never used. [unreadVariable]
+ uint32_t tmpr4 = 0;
+                ^
+platform/stm32f429/ioe.c:309:50: style:inconclusive: Boolean expression '!i2c_get_flag(I2C3_BASE,I2C_FLAG_TXE)' is used in bitwise operation. Did you mean '||'? [bitwiseOnBoolean]
+ while ((!i2c_get_flag(I2C3_BASE, I2C_FLAG_TXE)) | (!i2c_get_flag(I2C3_BASE, I2C_FLAG_BTF))) {
+                                                 ^
+platform/stm32f429/ioe.c:221:2: warning:inconclusive: Found suspicious operator '*' [constStatement]
+ *I2C_SR2(I2C3_BASE); /* Read status register 2 to clear ADDR flag */
+ ^
+platform/stm32f429/ioe.c:253:2: warning:inconclusive: Found suspicious operator '*' [constStatement]
+ *I2C_SR2(I2C3_BASE); /* read status register 2 to clear ADDR flag (2) */
+ ^
+platform/stm32f429/ioe.c:290:2: warning:inconclusive: Found suspicious operator '*' [constStatement]
+ *I2C_SR2(I2C3_BASE); /* read status register 2 to clear ADDR flag (1) */
+ ^
+user/apps/l4test/ipc.c:72:0: information: Skipping configuration 'NULL' since the value of 'NULL' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ pager_start_thread(ipc_t1, f1, NULL);
+^
+user/apps/l4test/ipc.c:73:0: information: Skipping configuration 'NULL' since the value of 'NULL' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ pager_start_thread(ipc_t2, f2, NULL);
+^
+user/apps/l4test/ipc.c:188:0: information: Skipping configuration 'NULL' since the value of 'NULL' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ return NULL;
+^
+user/apps/l4test/ipc.c:245:0: information: Skipping configuration 'NULL' since the value of 'NULL' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ return NULL;
+^
+user/apps/l4test/main.c:162:0: information: Skipping configuration 'NULL' since the value of 'NULL' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ return NULL;
+^
+user/apps/l4test/string.c:10:20: style:inconclusive: Function 'strlen' argument 1 names different: declaration 'src' definition 'str'. [funcArgNamesDifferent]
+strlen(const char *str)
+                   ^
+user/apps/l4test/string.h:12:32: note: Function 'strlen' argument 1 names different: declaration 'src' definition 'str'.
+extern int strlen( const char *src );
+                               ^
+user/apps/l4test/string.c:10:20: note: Function 'strlen' argument 1 names different: declaration 'src' definition 'str'.
+strlen(const char *str)
+                   ^
+user/lib/io/semihost-io.c:36:8: style: union member 'param_t::entry_ptr' is never used. [unusedStructMember]
+ void *entry_ptr;
+       ^
+user/lib/l4/pager.c:100:22: style: The scope of the variable 'node' can be reduced. [variableScope]
+ struct thread_node *node;
+                     ^
+user/root_thread.c:34:44: portability: '(void*)kip_ptr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ kip_mem_desc_t *desc = ((void *) kip_ptr) +
+                                           ^
+user/root_thread.c:49:44: portability: '(void*)kip_ptr' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ kip_mem_desc_t *desc = ((void *) kip_ptr) +
+                                           ^
+external/kconfig/menu.c:473:6: warning: Null pointer dereference: menu [ctunullpointer]
+ if (menu->prompt)
+     ^
+external/kconfig/nconf.c:1227:6: note: Assuming that condition 'menu' is not redundant
+
+     ^
+external/kconfig/nconf.c:1239:31: note: Calling function menu_get_prompt, 1st argument is null
+ show_scroll_win(main_window, _(menu_get_prompt(menu)), str_get(&help));
+                              ^
+external/kconfig/menu.c:473:6: note: Dereferencing argument menu that is null
+ if (menu->prompt)
+     ^
+user/lib/l4/platform/syscalls.c:22:0: style: The function 'L4_ExchangeRegisters' is never used. [unusedFunction]
+
+^
+user/lib/l4/platform/syscalls.c:14:0: style: The function 'L4_KernelInterface' is never used. [unusedFunction]
+
+^
+user/lib/l4/platform/syscalls.c:110:0: style: The function 'L4_Lipc' is never used. [unusedFunction]
+
+^
+user/lib/l4/platform/syscalls.c:146:0: style: The function 'L4_MemoryControl' is never used. [unusedFunction]
+
+^
+user/lib/l4/platform/syscalls.c:136:0: style: The function 'L4_ProcessorControl' is never used. [unusedFunction]
+
+^
+user/lib/l4/platform/syscalls.c:74:0: style: The function 'L4_Schedule' is never used. [unusedFunction]
+
+^
+user/lib/l4/platform/syscalls.c:124:0: style: The function 'L4_SpaceControl' is never used. [unusedFunction]
+
+^
+user/lib/l4/platform/syscalls.c:61:0: style: The function 'L4_SystemClock' is never used. [unusedFunction]
+
+^
+user/lib/l4/platform/syscalls.c:69:0: style: The function 'L4_ThreadSwitch' is never used. [unusedFunction]
+
+^
+user/lib/l4/platform/syscalls.c:119:0: style: The function 'L4_Unmap' is never used. [unusedFunction]
+
+^
+platform/stm32-common/rcc.c:164:0: style: The function 'RCC_AHBPeriphClockCmd' is never used. [unusedFunction]
+
+^
+platform/stm32-common/rcc.c:187:0: style: The function 'RCC_AHBPeriphResetCmd' is never used. [unusedFunction]
+
+^
+user/apps/l4test/assert.c:14:0: style: The function '__assert' is never used. [unusedFunction]
+
+^
+kernel/interrupt.c:212:0: style: The function '__interrupt_handler' is never used. [unusedFunction]
+
+^
+kernel/lib/stdio.c:9:0: style: The function '__l4_puts' is never used. [unusedFunction]
+
+^
+external/kconfig/menu.c:41:0: style: The function '_menu_init' is never used. [unusedFunction]
+
+^
+platform/stm32-common/nvic.c:14:0: style: The function '_undefined_handler' is never used. [unusedFunction]
+
+^
+platform/kprobes-arch.c:58:0: style: The function 'arch_kprobe_handler' is never used. [unusedFunction]
+
+^
+kernel/memory.c:313:0: style: The function 'as_map_ktext' is never used. [unusedFunction]
+
+^
+kernel/error.c:86:0: style: The function 'assert_impl' is never used. [unusedFunction]
+
+^
+external/kconfig/qconf.cc:1632:0: style: The function 'closeEvent' is never used. [unusedFunction]
+
+^
+external/kconfig/confdata.c:666:0: style: The function 'conf_split_config' is never used. [unusedFunction]
+
+^
+external/kconfig/qconf.cc:821:0: style: The function 'contextMenuEvent' is never used. [unusedFunction]
+
+^
+platform/debug_device.c:108:0: style: The function 'dbg_change_device' is never used. [unusedFunction]
+
+^
+user/lib/io/user_interrupt.c:102:0: style: The function 'disable_irq' is never used. [unusedFunction]
+
+^
+loader/elf/elf32.c:131:0: style: The function 'elf32_getSegmentInfo' is never used. [unusedFunction]
+
+^
+loader/elf/elf32.c:126:0: style: The function 'elf32_getSegmentType' is never used. [unusedFunction]
+
+^
+loader/elf/elf32.c:104:0: style: The function 'elf32_printStringTable' is never used. [unusedFunction]
+
+^
+loader/elf/elf.c:151:0: style: The function 'elf_getMemoryBounds' is never used. [unusedFunction]
+
+^
+loader/elf/elf.c:84:0: style: The function 'elf_getNumSections' is never used. [unusedFunction]
+
+^
+loader/elf/elf.c:30:0: style: The function 'elf_getProgramHeaderFlags' is never used. [unusedFunction]
+
+^
+loader/elf/elf.c:132:0: style: The function 'elf_getProgramHeaderInfo' is never used. [unusedFunction]
+
+^
+loader/elf/elf.c:36:0: style: The function 'elf_getProgramHeaderType' is never used. [unusedFunction]
+
+^
+loader/elf/elf.c:120:0: style: The function 'elf_getSection' is never used. [unusedFunction]
+
+^
+loader/elf/elf.c:114:0: style: The function 'elf_getSectionAddr' is never used. [unusedFunction]
+
+^
+loader/elf/elf.c:96:0: style: The function 'elf_getSectionFlags' is never used. [unusedFunction]
+
+^
+loader/elf/elf.c:90:0: style: The function 'elf_getSectionName' is never used. [unusedFunction]
+
+^
+loader/elf/elf.c:126:0: style: The function 'elf_getSectionNamed' is never used. [unusedFunction]
+
+^
+loader/elf/elf.c:108:0: style: The function 'elf_getSectionSize' is never used. [unusedFunction]
+
+^
+loader/elf/elf.c:102:0: style: The function 'elf_getSectionType' is never used. [unusedFunction]
+
+^
+loader/elf/elf.c:72:0: style: The function 'elf_getSegmentStringTable' is never used. [unusedFunction]
+
+^
+loader/elf/elf.c:78:0: style: The function 'elf_getStringTable' is never used. [unusedFunction]
+
+^
+loader/elf/elf.c:190:0: style: The function 'elf_vaddrInProgramHeader' is never used. [unusedFunction]
+
+^
+loader/elf/elf.c:202:0: style: The function 'elf_vtopProgramHeader' is never used. [unusedFunction]
+
+^
+user/lib/io/user_interrupt.c:92:0: style: The function 'enable_irq' is never used. [unusedFunction]
+
+^
+user/apps/irq_test/user_exti.c:31:0: style: The function 'exti_disable' is never used. [unusedFunction]
+
+^
+user/apps/irq_test/user_exti.c:25:0: style: The function 'exti_enable' is never used. [unusedFunction]
+
+^
+user/apps/irq_test/user_exti.c:57:0: style: The function 'exti_interrupt_status' is never used. [unusedFunction]
+
+^
+user/apps/irq_test/user_exti.c:65:0: style: The function 'exti_interrupt_status_clear' is never used. [unusedFunction]
+
+^
+external/kconfig/util.c:12:0: style: The function 'file_lookup' is never used. [unusedFunction]
+
+^
+external/kconfig/util.c:33:0: style: The function 'file_write_dep' is never used. [unusedFunction]
+
+^
+user/lib/libposix/fork.c:5:0: style: The function 'fork' is never used. [unusedFunction]
+
+^
+user/apps/l4test/main.c:112:0: style: The function 'get_new_page' is never used. [unusedFunction]
+
+^
+user/apps/l4test/main.c:118:0: style: The function 'get_startup_values' is never used. [unusedFunction]
+
+^
+platform/stm32-common/gpio-f1.c:63:0: style: The function 'gpio_config_input' is never used. [unusedFunction]
+
+^
+platform/stm32-common/gpio-f1.c:86:0: style: The function 'gpio_input_bit' is never used. [unusedFunction]
+
+^
+platform/stm32-common/gpio-f1.c:76:0: style: The function 'gpio_out_high' is never used. [unusedFunction]
+
+^
+platform/stm32-common/gpio-f1.c:81:0: style: The function 'gpio_out_low' is never used. [unusedFunction]
+
+^
+platform/stm32f429/ioe.c:15:0: style: The function 'ioe_init' is never used. [unusedFunction]
+
+^
+platform/stm32f429/ioe.c:343:0: style: The function 'ioe_tp_get_state' is never used. [unusedFunction]
+
+^
+kernel/kprobes.c:113:0: style: The function 'kretprobe_unregister' is never used. [unusedFunction]
+
+^
+kernel/ksym.c:77:0: style: The function 'ksym_id2addr' is never used. [unusedFunction]
+
+^
+kernel/ksym.c:72:0: style: The function 'ksym_id2name' is never used. [unusedFunction]
+
+^
+kernel/lib/ktable.c:94:0: style: The function 'ktable_alloc_id' is never used. [unusedFunction]
+
+^
+kernel/lib/ktable.c:76:0: style: The function 'ktable_is_allocated' is never used. [unusedFunction]
+
+^
+platform/stm32f429/lcd.c:222:0: style: The function 'lcd_display_off' is never used. [unusedFunction]
+
+^
+platform/stm32f429/lcd.c:502:0: style: The function 'lcd_fill_rect' is never used. [unusedFunction]
+
+^
+external/kconfig/menu.c:107:0: style: The function 'menu_add_dep' is never used. [unusedFunction]
+
+^
+external/kconfig/menu.c:47:0: style: The function 'menu_add_entry' is never used. [unusedFunction]
+
+^
+external/kconfig/menu.c:175:0: style: The function 'menu_add_expr' is never used. [unusedFunction]
+
+^
+external/kconfig/menu.c:69:0: style: The function 'menu_add_menu' is never used. [unusedFunction]
+
+^
+external/kconfig/menu.c:185:0: style: The function 'menu_add_option' is never used. [unusedFunction]
+
+^
+external/kconfig/menu.c:164:0: style: The function 'menu_add_prompt' is never used. [unusedFunction]
+
+^
+external/kconfig/menu.c:169:0: style: The function 'menu_add_visibility' is never used. [unusedFunction]
+
+^
+external/kconfig/menu.c:76:0: style: The function 'menu_end_menu' is never used. [unusedFunction]
+
+^
+user/apps/l4test/main.c:145:0: style: The function 'msec_sleep' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:698:0: style: The function 'on_about1_activate' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:735:0: style: The function 'on_back_clicked' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:792:0: style: The function 'on_collapse_clicked' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:798:0: style: The function 'on_expand_clicked' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:781:0: style: The function 'on_full_clicked' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:667:0: style: The function 'on_introduction1_activate' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:716:0: style: The function 'on_license1_activate' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:750:0: style: The function 'on_load_clicked' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:593:0: style: The function 'on_quit1_activate' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:573:0: style: The function 'on_save_as1_activate' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:641:0: style: The function 'on_set_option_mode1_activate' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:650:0: style: The function 'on_set_option_mode2_activate' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:659:0: style: The function 'on_set_option_mode3_activate' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:629:0: style: The function 'on_show_data1_activate' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:600:0: style: The function 'on_show_name1_activate' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:611:0: style: The function 'on_show_range1_activate' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:756:0: style: The function 'on_single_clicked' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:765:0: style: The function 'on_split_clicked' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:1056:0: style: The function 'on_treeview1_button_press_event' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:938:0: style: The function 'on_treeview2_button_press_event' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:1040:0: style: The function 'on_treeview2_cursor_changed' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:995:0: style: The function 'on_treeview2_key_press_event' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:489:0: style: The function 'on_window1_destroy' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:496:0: style: The function 'on_window1_size_request' is never used. [unusedFunction]
+
+^
+user/lib/l4/pager.c:277:0: style: The function 'pager_thread' is never used. [unusedFunction]
+
+^
+kernel/error.c:60:0: style: The function 'panic_impl' is never used. [unusedFunction]
+
+^
+user/apps/l4test/main.c:50:0: style: The function 'print_h1' is never used. [unusedFunction]
+
+^
+user/apps/l4test/main.c:58:0: style: The function 'print_h2' is never used. [unusedFunction]
+
+^
+user/lib/libposix/pthread.c:13:0: style: The function 'pthread_create' is never used. [unusedFunction]
+
+^
+user/lib/libposix/pthread.c:24:0: style: The function 'pthread_detach' is never used. [unusedFunction]
+
+^
+user/lib/libposix/pthread.c:29:0: style: The function 'pthread_exit' is never used. [unusedFunction]
+
+^
+user/lib/libposix/pthread.c:34:0: style: The function 'pthread_join' is never used. [unusedFunction]
+
+^
+user/lib/libposix/pthread.c:45:0: style: The function 'pthread_mutex_destroy' is never used. [unusedFunction]
+
+^
+user/lib/libposix/pthread.c:39:0: style: The function 'pthread_mutex_init' is never used. [unusedFunction]
+
+^
+user/lib/libposix/pthread.c:50:0: style: The function 'pthread_mutex_lock' is never used. [unusedFunction]
+
+^
+user/lib/libposix/pthread.c:84:0: style: The function 'pthread_mutex_timedlock' is never used. [unusedFunction]
+
+^
+user/lib/libposix/pthread.c:78:0: style: The function 'pthread_mutex_unlock' is never used. [unusedFunction]
+
+^
+external/kconfig/gconf.c:891:0: style: The function 'renderer_toggled' is never used. [unusedFunction]
+
+^
+kernel/sampling.c:40:0: style: The function 'sampled_pcpush' is never used. [unusedFunction]
+
+^
+kernel/sampling.c:23:0: style: The function 'sampling_disable' is never used. [unusedFunction]
+
+^
+kernel/sampling.c:18:0: style: The function 'sampling_enable' is never used. [unusedFunction]
+
+^
+kernel/sampling.c:28:0: style: The function 'sampling_init' is never used. [unusedFunction]
+
+^
+kernel/sampling.c:62:0: style: The function 'sampling_stats' is never used. [unusedFunction]
+
+^
+user/lib/io/l4io.c:38:0: style: The function 'semihost_puts' is never used. [unusedFunction]
+
+^
+platform/spinlock.c:32:0: style: The function 'spinlock_lock' is never used. [unusedFunction]
+
+^
+platform/spinlock.c:38:0: style: The function 'spinlock_unlock' is never used. [unusedFunction]
+
+^
+user/apps/l4test/main.c:132:0: style: The function 'start_thread_ip_sp' is never used. [unusedFunction]
+
+^
+external/kconfig/util.c:102:0: style: The function 'str_assign' is never used. [unusedFunction]
+
+^
+user/apps/l4test/string.c:36:0: style: The function 'strcmp_of' is never used. [unusedFunction]
+
+^
+external/kconfig/symbol.c:46:0: style: The function 'sym_init' is never used. [unusedFunction]
+
+^
+platform/stm32-common/systick.c:22:0: style: The function 'systick_disable' is never used. [unusedFunction]
+
+^
+platform/bitops.c:70:0: style: The function 'test_and_set_bit' is never used. [unusedFunction]
+
+^
+platform/bitops.c:50:0: style: The function 'test_and_set_word' is never used. [unusedFunction]
+
+^
+kernel/interrupt.c:325:0: style: The function 'user_irq_set_pending' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
